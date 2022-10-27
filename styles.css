@@ -1,0 +1,127 @@
+/* #FDB833 */
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  color: #394554;
+}
+
+body {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+}
+
+.side-bar {
+  display: flex;
+  flex-direction: column;
+  grid-column-start: 1;
+  background-color: #1789fc;
+  height: 100%;
+  justify-content: flex-start;
+}
+
+.headshot {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 250px;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  border-bottom: 1px #585c5f solid;
+}
+
+.image {
+  height: 150px;
+  width: 150px;
+  margin: 20px;
+  border-radius: 50%;
+  background-image: url('assets/mike-myers.jpeg');
+  background-size: cover;
+}
+
+.sidebar-svg {
+  height: 15px;
+  fill: #585c5f;
+  margin-right: 15px;
+}
+
+.sidebar-main,
+.sidebar-admin,
+.sidebar-categories {
+  display: flex;
+  flex-direction: column;
+  height: 275px;
+  width: 100%;
+  padding: 15px;
+  border-bottom: 1px #585c5f solid;
+}
+
+.sidebar-main p {
+  font-size: 13px;
+}
+
+li {
+  margin: 25px 0;
+  font-size: 14px;
+  list-style-type: none;
+}
+
+main {
+  grid-column-start: 2;
+  background-color: rgb(217, 230, 243);
+  height: 100%
+}
+
+header {
+  display: flex;;
+  width: 100%;
+  height: 60px;
+  background-color: rgb(217, 230, 243);
+  border-bottom: 1px solid #9aa0a4
+}
+
+.header-left {
+  display: flex;
+  width: 50%
+}
+
+.header-right {
+  display: flex;
+  justify-content: flex-end;
+  overflow: auto;
+  width: 50%
+}
+
+.hamburger-container {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 65px;
+  border-right: 1px solid #9aa0a4;
+}
+
+.header-svg {
+  transform: scale(.3);
+  fill: #9aa0a4;
+}
+
+.search {
+  height: 100%;
+  width: 60%;
+  padding: 5px;
+  margin: 0;
+  background-color: rgb(217, 230, 243);
+  border: none;
+}
+
+.search:focus {
+  outline: none;
+}
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration { display: none }

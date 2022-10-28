@@ -10,7 +10,7 @@
 
 body {
   display: grid;
-  grid-template-columns: 1fr 4fr;
+  grid-template-columns: 1fr 5fr;
 }
 
 .side-bar {
@@ -18,6 +18,7 @@ body {
   flex-direction: column;
   grid-column-start: 1;
   background-color: #1789fc;
+  background-color: rgb(55, 64, 81);
   height: 100%;
   justify-content: flex-start;
 }
@@ -85,18 +86,20 @@ header {
 
 .header-left {
   display: flex;
+  align-items: center;
   width: 50%
 }
 
 .header-right {
   display: flex;
   justify-content: flex-end;
-  overflow: auto;
+  align-items: center;
   width: 50%
 }
 
 .hamburger-container {
   display: flex;
+  justify-content: center;
   align-items: center;
   height: 100%;
   width: 65px;
@@ -104,8 +107,9 @@ header {
 }
 
 .header-svg {
-  transform: scale(.3);
+  height: 20px;
   fill: #9aa0a4;
+  padding: 0 10px;
 }
 
 .search {
@@ -125,3 +129,168 @@ input[type="search"]::-webkit-search-decoration,
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-results-button,
 input[type="search"]::-webkit-search-results-decoration { display: none }
+
+.info-section {
+  display: flex;
+  flex-wrap: wrap;
+  height: 15%;
+}
+
+.info-section-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+  height: 50%
+}
+
+.info-section-div-location {
+  display: flex;
+}
+
+.info-section-div-buttons {
+  display: flex;
+  width: 50%;
+  height: 50%;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.info-section-list {
+  display: flex;
+  width: 75%;
+  height: 50%
+}
+
+.info-section-list li {
+  padding: 0 10px;
+}
+
+.main-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 3fr;
+}
+
+.graph-section {
+  grid-column-end: span 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%
+}
+
+.graph-section img {
+  width: 33%
+}
+
+.graph-labels {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 10%;
+}
+
+.span1 {
+  display: block;
+  text-align: center;
+  width: 33%;
+}
+
+.span2 {
+  display: block;
+  text-align: center;
+  width: 66%;
+}
+
+.job-description-section {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 2;
+}
+
+.job-description-box {
+  height: 100%;
+  width: 100%;
+  margin: 40px;
+  background-color: #1789fc;
+}
+
+.job-description-box div {
+  display: flex;
+  height: 9%;
+  align-items: center;
+}
+
+.job-description-box div:not(.first) {
+  margin: 10px 15px;
+  border-bottom: 1px solid #9aa0a4;
+}
+
+.job-description-box div.first {
+  background-color: rgb(56 122 184);
+  margin: 10px 0;
+}
+
+.socials {
+  margin-top: 40px;
+  margin-bottom: 30px;
+  padding: 0 20px;
+  grid-column-start: 3;
+  grid-row-start: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.social-span {
+  display: flex;
+  width: 80%;
+  height: 60px;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  border-radius: 5px;
+  color: white;
+}
+
+#facebook {
+  background-color: #4267B2;
+}
+
+#facebook p {
+  display: flex;
+  color: white;
+  width: 65%
+}
+
+#twitter {
+  background-color: #1DA1F2;
+}
+
+#twitter p {
+  display: flex;
+  color: white;
+  width: 62%
+}
+
+#linkedin {
+  background-color: #0077B5;
+}
+
+#linkedin p {
+  display: flex;
+  color: white;
+  width: 64%
+}
+
+.social-svg {
+  height: 20px;
+  fill: white;
+  padding-left: 25px;
+}

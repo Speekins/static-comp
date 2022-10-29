@@ -1,23 +1,31 @@
-/* #FDB833 */
-
 * {
-  margin: 0;
-  padding: 0;
+  /* margin: 0;
+  padding: 0; */
   font-family: 'Raleway', sans-serif;
   font-weight: 500;
   color: #394554;
 }
 
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%
+}
+
 body {
   display: grid;
   grid-template-columns: 1fr 5fr;
+  grid-template-rows: 1fr;
 }
 
 .side-bar {
   display: flex;
   flex-direction: column;
   grid-column-start: 1;
-  background-color: #1789fc;
+  grid-row-start: 1;
+  color: #7a7f83;
   background-color: rgb(55, 64, 81);
   height: 100%;
   justify-content: flex-start;
@@ -39,7 +47,7 @@ body {
   width: 150px;
   margin: 20px;
   border-radius: 50%;
-  background-image: url('assets/mike-myers.jpeg');
+  background-image: url('assets/silly-goose.png');
   background-size: cover;
 }
 
@@ -72,12 +80,14 @@ li {
 
 main {
   grid-column-start: 2;
+  grid-row-start: 1;
   background-color: rgb(217, 230, 243);
   height: 100%
 }
 
 header {
-  display: flex;;
+  display: flex;
+  ;
   width: 100%;
   height: 60px;
   background-color: rgb(217, 230, 243);
@@ -128,7 +138,9 @@ header {
 input[type="search"]::-webkit-search-decoration,
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-results-button,
-input[type="search"]::-webkit-search-results-decoration { display: none }
+input[type="search"]::-webkit-search-results-decoration {
+  display: none
+}
 
 .info-section {
   display: flex;
@@ -167,6 +179,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none }
 }
 
 .main-content {
+  height: auto;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 3fr;
@@ -205,39 +218,62 @@ input[type="search"]::-webkit-search-results-decoration { display: none }
 }
 
 .job-description-section {
-  display: flex;
-  justify-content: center;
-  align-content: center;
   grid-column-start: 1;
   grid-column-end: 3;
   grid-row-start: 2;
+  display: flex;
+  justify-content: center;
+  align-content: center;
 }
 
 .job-description-box {
-  height: 100%;
   width: 100%;
   margin: 40px;
   background-color: #1789fc;
+  border-radius: 5px;
 }
 
 .job-description-box div {
   display: flex;
-  height: 9%;
   align-items: center;
+  font-size: 14px;
+}
+
+.job-description-box div.first {
+  background-color: rgb(56 122 184);
+  margin-bottom: 10px;
+  padding: 30px 20px;
+  border-radius: 5px 5px 0 0;
 }
 
 .job-description-box div:not(.first) {
   margin: 10px 15px;
   border-bottom: 1px solid #9aa0a4;
+  padding: 30px 20px;
 }
 
-.job-description-box div.first {
-  background-color: rgb(56 122 184);
-  margin: 10px 0;
+.job-description-box div.last {
+  border: none;
+}
+
+.job-description-topic {
+  display: inline-block;
+  width: 25%;
+  margin-right: 30px;
+}
+
+.hiring-lead-image {
+  background-image: url('assets/mike-myers.jpeg');
+  height: auto;
+  width: 20px;
+  border-radius: 50%;
+  background-size: cover
 }
 
 .socials {
-  margin-top: 40px;
+  grid-column-start: 3;
+  grid-row-start: 2;
+  margin-top: 20px;
   margin-bottom: 30px;
   padding: 0 20px;
   grid-column-start: 3;
@@ -250,7 +286,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none }
 .social-span {
   display: flex;
   width: 80%;
-  height: 60px;
+  height: 5%;
   align-items: center;
   justify-content: space-between;
   margin-top: 25px;
@@ -293,4 +329,40 @@ input[type="search"]::-webkit-search-results-decoration { display: none }
   height: 20px;
   fill: white;
   padding-left: 25px;
+}
+
+.social-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-bottom: 1px solid #9aa0a4;
+  padding: 10px 10px 10px 0;
+  height: 20%;
+}
+
+.social-div p {
+  font-size: 13px;
+}
+
+.copy-input {
+  display: flex;
+  width: 100%
+}
+
+.copy-input input {
+  padding: 15px;
+  width: 65%;
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+  border: none;
+}
+
+.copy-input button {
+  padding: 15px;
+  width: 20%;
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+  border: none;
+  text-align: center;
+  background-color: rgb(96, 206, 212);
 }

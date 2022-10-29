@@ -119,10 +119,18 @@ header {
   border-right: 1px solid #9aa0a4;
 }
 
+.hamburger-container:hover {
+  background-color: #1789fc;
+}
+
 .header-svg {
   height: 20px;
   fill: #9aa0a4;
-  padding: 0 10px;
+  padding: 20px;
+}
+
+.header-svg:hover {
+  background-color: #1789fc;
 }
 
 .search {

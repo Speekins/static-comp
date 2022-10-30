@@ -270,7 +270,8 @@ input[type="search"]::-webkit-search-results-decoration {
 .info-section-list li {
   height: 75%;
   padding: 0 15px;
-  margin: 0;
+  margin: 0 0 0 10px;
+  list-style: none;
 }
 
 .info-section-list li:hover {

@@ -76,10 +76,31 @@ body {
   padding: 0;
 }
 
-li {
+.side-bar li {
   margin: 30px 0;
   font-size: 15px;
   list-style-type: none;
+}
+
+.side-bar li:hover {
+  color: #9aa0a4;
+  cursor: pointer;
+}
+
+#administrative-box {
+ fill: rgb(249, 216, 74);
+}
+
+#design-box {
+  fill: #1789fc;
+}
+
+#executive-box {
+  fill: rgb(211, 94, 57);
+}
+
+#human-resources-box {
+  fill: rgb(77, 168, 138);
 }
 
 main {
@@ -121,6 +142,7 @@ header {
 
 .hamburger-container:hover {
   background-color: #1789fc;
+  cursor: pointer;
 }
 
 .header-svg {
@@ -131,6 +153,7 @@ header {
 
 .header-svg:hover {
   background-color: #1789fc;
+  cursor: pointer;
 }
 
 .search {
@@ -210,6 +233,7 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .info-section-div-buttons-svg:hover {
   background-color: #1789fc;
+  cursor: pointer;
 }
 
 .info-section-div-buttons-svg svg {
@@ -251,6 +275,7 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .info-section-list li:hover {
   border-bottom: 2px #1789fc solid;
+  cursor: pointer;
 }
 
 .main-content {
@@ -304,7 +329,8 @@ input[type="search"]::-webkit-search-results-decoration {
 .job-description-box {
   width: 100%;
   margin: 40px;
-  background-color: #1789fc;
+  background-color: #b8ddf5;
+  color: #7a7f83;
   border-radius: 5px;
 }
 
@@ -315,7 +341,9 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .job-description-box div.first {
-  background-color: rgb(56 122 184);
+  background-color: #1789fc;
+  color: white;
+  font-size: 16px;
   margin-bottom: 10px;
   padding: 30px 20px;
   border-radius: 5px 5px 0 0;
